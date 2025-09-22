@@ -1,0 +1,8 @@
+# Images Directory
+
+This folder contains image assets for the GitBook documentation.
+
+## Usage
+- `logo.png` - Main project logo
+- `icons/` - Various icons and small graphics
+- `screenshots/` - Application screenshots and UI examples

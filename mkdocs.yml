@@ -1,0 +1,67 @@
+# mkdocs.yml
+site_name: Proof of Post Docs
+site_description: Comprehensive documentation for the Proof of Post social media platform - a Cardano-native decentralized social network
+site_url: https://CardanoTokenIO.github.io/ProoOfPost/
+site_author: UTxO Maestro
+copyright: Copyright &copy; 2024 Proof of Post. All rights reserved.
+
+theme:
+  name: material
+  logo: images/header-logo.png
+  favicon: images/header-logo.png
+  language: en
+  palette:
+    scheme: default
+    primary: blue
+    accent: blue
+  features:
+    - navigation.sections
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+    - navigation.expand
+
+# Use docs directory to avoid conflicts
+docs_dir: docs
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - attr_list
+  - md_in_html
+
+# Build navigation based on existing SUMMARY.md structure
+nav:
+  - Introduction: README.md
+  - Platform Overview:
+    - What is Proof of Post?: platform/what-is-proof-of-post.md
+    - Key Features: platform/key-features.md
+    - Technical Architecture: platform/technical-architecture.md
+  - Tokenomics:
+    - The POST Token: getting-started/the-post-token.md
+    - Presale: getting-started/presale.md
+  - Core Features:
+    - Social Media Features: features/social-media.md
+    - Wallet Integration: features/wallet-integration.md
+    - Token Ecosystem: features/token-ecosystem.md
+    - Content Monetization: features/content-monetization.md
+  - User Guide:
+    - Getting Started: user-guide/getting-started.md
+    - Creating Content: user-guide/creating-content.md
+    - Wallet Connection: user-guide/wallet-connection.md
+    - Monetizing Content: user-guide/monetizing-content.md
+  - Developer Resources:
+    - API Documentation: developers/api-documentation.md
+  - Community:
+    - Social Links: social/links.md
+
+extra:
+  generator: false
+
+extra_css:
+  - stylesheets/custom.css

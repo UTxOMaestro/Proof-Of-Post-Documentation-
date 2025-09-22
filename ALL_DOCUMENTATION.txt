@@ -1,0 +1,884 @@
+===============================================================================
+                        PROOF OF POST - COMPLETE DOCUMENTATION
+===============================================================================
+
+=====================================
+MAIN README
+=====================================
+
+My name is UTxO Maestro, a Blockchain Architect, Crypto maximalist and Software/Systems Engineer.
+
+## Welcome to Proof of Post
+
+**Proof of Post** is a revolutionary **Cardano-native social media platform** - the world's first truly decentralized Twitter-like experience built specifically for the Cardano ecosystem. 
+
+### What Makes Proof of Post Special?
+
+- **🔐 Wallet-Based Authentication** - Connect with your Cardano wallet instead of traditional login
+- **💎 Cryptographic Verification** - Every post is cryptographically signed and verifiable on-chain
+- **💰 Built-in Monetization** - Tip creators in ADA, create paid content, and participate in a token economy
+- **🏷️ ADA Handle Integration** - Use your on-chain ADA handle as your verified social identity
+- **🌐 Fully Decentralized** - Content stored on IPFS, identities on Cardano, no central authority
+
+Proof of Post combines the familiar social media experience you love with the security, ownership, and financial opportunities of the Cardano blockchain. It's not just social media - it's the future of decentralized social interaction.
+
+=====================================
+PLATFORM OVERVIEW
+=====================================
+
+## What is Proof of Post?
+
+**Proof of Post** is a **Cardano-native social media platform** - essentially a **Twitter-like decentralized social network** built specifically for the Cardano ecosystem. It's a comprehensive social platform that combines traditional social media features with advanced blockchain integration and cryptocurrency functionality.
+
+### The Vision
+
+Proof of Post represents the evolution of social media, where users can:
+
+- **Connect via Cardano wallets** instead of traditional login systems
+- **Verify identity** through on-chain ADA handles
+- **Monetize content** through paid media and tipping
+- **Interact with tokens** and DeFi directly within the social experience
+- **Maintain cryptographic proof** of their posts and interactions
+- **Participate in a decentralized social economy** built on Cardano
+
+### Core Concept
+
+Unlike traditional social media platforms that rely on centralized servers and advertising models, Proof of Post leverages the Cardano blockchain to create a truly decentralized social experience where:
+
+**Decentralized Identity**: Users authenticate using their Cardano wallets, with support for ADA handles as verified on-chain identities.
+
+**Content Ownership**: All posts are cryptographically signed, providing immutable proof of authorship. Content is stored on IPFS for decentralized access.
+
+**Economic Integration**: The platform natively supports Cardano's token ecosystem, allowing users to tip creators, monetize content, and interact with DeFi protocols.
+
+**Cryptographic Security**: Every post can be cryptographically verified, preventing impersonation and ensuring the integrity of content.
+
+=====================================
+KEY FEATURES
+=====================================
+
+## 🔐 Wallet-Based Authentication
+
+### Multi-Wallet Support
+- **Eternl, Lace, Vespr** - Connect with your preferred Cardano wallet
+- **CIP-30 standard** compliance for seamless integration
+- **Signature-based authentication** using CIP-8 message signing
+- **Session management** with secure JWT tokens
+
+### Dual Identity System
+- **Platform Usernames** (`@username`) - Choose your own handle
+- **ADA Handles** (`$handle`) - Verified on-chain Cardano identities
+- **Automatic detection** of ADA handles when connecting wallets
+
+## 📱 Social Media Features
+
+### Content Creation
+- **Text Posts** with 280 character limit
+- **Image Uploads** with IPFS storage for decentralization
+- **GIF Support** via Giphy integration
+- **Hashtag Support** (`#topic`) for topic discovery
+- **Token Mentions** (`$TOKEN`) with automatic linking
+
+### Social Interactions
+- **Rich Reactions**: Like ❤️
+- **Retweets/Boosts** with optional commentary
+- **Comments and Replies** on all posts
+- **Bookmarking** for saving posts
+- **Tipping System** in ADA and other tokens
+
+### Discovery & Navigation
+- **Virtualized Home Feed** with smooth 60fps infinite scroll
+- **Hot Topics** showing trending hashtags
+- **Advanced Search** for posts, users, tokens, and topics
+- **Topic-Based Filtering** for focused discussions
+
+## 💰 Cardano Integration
+
+### Native Crypto Features
+- **Balance Display** showing your ADA holdings
+- **Asset Holdings** for all your Cardano tokens
+- **Transaction Signing** for posts and payments
+- **Multi-Asset Support** beyond just ADA
+- **Token Ecosystem** with comprehensive search and tracking
+
+## 💎 Content Monetization
+
+### Paid Media System
+- **Monetize Images/Videos** - Set custom prices in ADA
+- **Blurred Previews** with unlock buttons for paid content
+- **Blockchain Payment Verification** for secure transactions
+- **No Platform Fees** on direct payments
+
+### Creator Economy
+- **Direct Tipping** from readers to creators
+- **Token-Gated Content** possibilities
+- **Cryptographic Ownership** proof for all content
+
+=====================================
+TECHNICAL ARCHITECTURE
+=====================================
+
+## 🏗️ Core Technology Stack
+
+### Frontend Architecture
+- **Next.js 14** with App Router for modern React development
+- **TypeScript** throughout for type safety
+- **Tailwind CSS** for responsive, utility-first styling
+- **Framer Motion** for smooth animations
+
+### State Management & Data
+- **Zustand** with persistence for client-side state
+- **SQLite** with Drizzle ORM for efficient data management
+- **JWT Authentication** with wallet signature verification
+
+### Blockchain Integration
+- **Lucid Cardano** for blockchain interactions
+- **CIP-30 Wallet Support** for multi-wallet compatibility
+- **Blockfrost API** for Cardano network data
+- **CIP-8 Message Signing** for cryptographic verification
+
+### Database Schema
+Core tables include:
+- **users** - User profiles and authentication
+- **posts** - Content and post metadata
+- **reactions** - User reactions to posts
+- **follows** - User follow relationships
+- **tips** - Token tips sent to posts
+- **tokens** - Token metadata cache
+- **paid_posts** - Monetized content configuration
+
+## 🔐 Authentication Flow
+
+1. User clicks "Connect Wallet"
+2. Wallet connection via CIP-30
+3. API generates challenge message
+4. Wallet signs challenge using CIP-8
+5. API verifies signature against blockchain
+6. JWT token issued for authenticated sessions
+
+=====================================
+SOCIAL MEDIA FEATURES
+=====================================
+
+## 📝 Content Creation
+
+### Rich Post Composer
+- **Text Posts** with 280 character limit
+- **Rich formatting** with automatic URL, mention, and hashtag detection
+- **Character counter** with visual feedback
+- **Auto-suggestions** for tokens, users, and hashtags
+
+### Media Support
+- **Image Uploads**: JPEG, PNG, WebP with automatic IPFS storage
+- **GIF Integration**: Built-in Giphy picker
+- **Multiple Media**: Up to 4 images per post
+
+### Content Enhancement
+- **Hashtag Support**: Use `#topic` to categorize content
+- **Token Mentions**: Reference `$TOKEN` to link to token pages
+- **User Mentions**: Tag `@username` or `$handle` to notify users
+
+## 💬 Social Interactions
+
+### Reaction System
+- **❤️ Like**: Show appreciation for content
+
+### Engagement Features
+- **Boost/Retweet**: Share content with followers
+- **Comments & Replies**: Threaded conversations
+- **Bookmarks**: Save posts for later reading
+- **Share**: Generate links to share posts externally
+
+### Social Graph
+- **Follow System**: Build your network
+- **Follower/Following Lists**: See connections
+- **Profile Badges**: Verification indicators
+
+## 🔍 Discovery & Navigation
+
+### Feed Experience
+- **Home Feed**: Personalized timeline from followed users
+- **Chronological Order**: Latest posts appear first
+- **Infinite Scroll**: Smooth loading of older content
+- **60fps Performance**: Virtualized rendering
+
+### Search Capabilities
+- **Post Search**: Full-text search across all content
+- **User Discovery**: Username and ADA handle lookup
+- **Token Integration**: Token ticker and name search
+- **Topic Organization**: Trending hashtags and topic pages
+
+=====================================
+TOKEN ECOSYSTEM
+=====================================
+
+## 🔍 Token Discovery
+
+### Comprehensive Token Database
+- **Token Metadata**: Names, tickers, descriptions, and images
+- **Policy Information**: Policy IDs and asset names
+- **Holder Statistics**: Number of holders and distribution
+- **Price Data**: Real-time pricing via DexHunter API
+- **Social Metrics**: Mention frequency and community engagement
+
+### Search & Discovery
+- **Token Search**: Find tokens by ticker, name, or policy ID
+- **Trending Tokens**: Popular tokens based on mentions
+- **Category Filtering**: Browse by token type
+- **Watchlist**: Follow favorite tokens for updates
+
+## 📊 Token Profiles
+
+Each token gets a dedicated profile page featuring:
+
+### Basic Information
+- **Token Name & Ticker**: Official project identification
+- **Token Logo**: High-resolution project branding
+- **Description**: Project overview and use case
+- **Supply Information**: Total and circulating supply
+
+### Market Data
+- **Current Price**: Real-time price in ADA and USD
+- **24h Change**: Price movement percentage
+- **Market Cap**: Total market valuation
+- **Trading Volume**: 24-hour trading activity
+- **Price Charts**: Historical price performance
+
+### Social Integration
+- **Mention Feed**: All posts mentioning the token
+- **Community Stats**: Follower count and engagement
+- **Official Links**: Website, social media links
+- **Holder Analysis**: Top holders and distribution
+
+## 💬 Token Mentions
+
+### Automatic Token Linking
+When users mention tokens using `$TOKEN` format:
+- **Automatic Detection**: Platform recognizes mentions
+- **Clickable Links**: Mentions become links to token profiles
+- **Real-time Validation**: Verify token exists
+- **Price Display**: Show current price on hover
+
+## 📈 Price Integration
+
+### Real-time Price Data
+- **DexHunter API Integration**: Reliable price feeds
+- **Multiple Price Sources**: Aggregated data for accuracy
+- **Price Alerts**: Notify users of significant movements
+- **Historical Charts**: Price history with various timeframes
+
+## 💰 Token Interactions
+
+### Tipping System
+- **Multi-Token Tipping**: Tip creators with any supported token
+- **Custom Amounts**: Set specific tip amounts
+- **Tip History**: Track tips sent and received
+
+### Trading Integration
+- **Swap Widget**: Direct token trading within platform
+- **DEX Integration**: Connect to popular Cardano DEXs
+- **Trading Pairs**: Discover available trading pairs
+
+=====================================
+WALLET INTEGRATION
+=====================================
+
+## 🔗 Supported Wallets
+
+### CIP-30 Compatible Wallets
+- **Eternl** - Feature-rich wallet with advanced capabilities
+- **Lace** - IOG's official light wallet
+- **Vespr** - Community-focused wallet
+
+### Browser Extension Detection
+Platform automatically detects installed wallets and presents connection options.
+
+## 🔐 Authentication Process
+
+### Wallet Connection Flow
+1. **Wallet Detection**: Platform scans for available CIP-30 wallets
+2. **User Selection**: Choose preferred wallet
+3. **Permission Request**: Wallet asks for connection permission
+4. **Address Retrieval**: Platform gets wallet's receive address
+5. **Challenge Generation**: Server creates unique signing challenge
+6. **Message Signing**: Wallet signs challenge using CIP-8 standard
+7. **Verification**: Server verifies signature against address
+8. **Session Creation**: JWT token issued for authenticated sessions
+
+### Security Features
+- **Challenge-Response Authentication**: Prevents replay attacks
+- **Signature Verification**: Cryptographic proof of wallet ownership
+- **Session Binding**: JWT tokens tied to specific wallet addresses
+- **Automatic Expiry**: Sessions expire for security
+
+## 👤 Identity Management
+
+### Dual Identity System
+
+#### Platform Usernames (`@username`)
+- **User-chosen handles** for easy identification
+- **Availability checking** to ensure uniqueness
+- **Profile customization** with bios and images
+
+#### ADA Handles (`$handle`)
+- **On-chain verification** through Blockfrost API
+- **Automatic detection** when wallets connect
+- **Verified badge display** for confirmed handles
+- **Handle-based profile URLs**
+
+### Profile Information
+Wallet connection automatically populates:
+- **Wallet Address**: Primary Cardano address
+- **ADA Balance**: Current ADA holdings display
+- **Asset Holdings**: All tokens in wallet
+- **ADA Handle**: Automatically verified if owned
+
+## 💰 Financial Integration
+
+### Transaction Capabilities
+- **Tip Payments**: Send ADA or tokens to creators
+- **Content Purchases**: Buy access to paid media
+- **Transaction Signing**: Secure approval for all payments
+- **Payment Verification**: Blockchain confirmation
+
+### Multi-Asset Support
+- **Native Tokens**: Support for all Cardano native assets
+- **Token Tipping**: Tip creators with any supported token
+- **Asset Metadata**: Automatic token information lookup
+
+## 🛡️ Security & Privacy
+
+### Cryptographic Security
+- **CIP-8 Message Signing**: Industry standard for wallet authentication
+- **Address Verification**: Prevent wallet address spoofing
+- **Signature Validation**: Every signed message cryptographically verified
+- **Session Security**: JWT tokens with wallet address binding
+
+### Privacy Protection
+- **Optional Address Display**: Choose whether to show wallet address
+- **Transaction Privacy**: Only you see full transaction history
+- **Selective Sharing**: Control what wallet information is public
+- **No Seed Phrase Storage**: Platform never accesses private keys
+
+### Post Signing
+- **Optional Post Signatures**: Cryptographically sign posts
+- **Verification Badges**: Signed posts show verification indicators
+- **Authenticity Proof**: Immutable proof of post authorship
+- **Anti-Impersonation**: Prevent fake posts attributed to wallet
+
+=====================================
+CONTENT MONETIZATION
+=====================================
+
+## 💎 Paid Media System
+
+### How It Works
+1. **Content Upload**: Creator uploads image/video with monetization enabled
+2. **Price Setting**: Set custom price in ADA for content access
+3. **Preview Generation**: Blurred/watermarked preview shown to users
+4. **Payment Processing**: Users pay ADA to unlock full content
+5. **Blockchain Verification**: Payment verified on Cardano blockchain
+6. **Content Delivery**: Full-resolution content delivered via signed URLs
+
+### Creator Benefits
+- **No Platform Fees**: Keep 100% of earnings (minus blockchain fees)
+- **Instant Payments**: Receive ADA directly to wallet
+- **Global Reach**: Accept payments from users worldwide
+- **Flexible Pricing**: Set any price for content
+- **Content Protection**: Watermarked content prevents unauthorized sharing
+
+## 🎯 Tipping System
+
+### Direct Creator Support
+- **One-Click Tipping**: Simple tip buttons on every post
+- **Custom Amounts**: Set any tip amount
+- **Multi-Token Support**: Tip with ADA, DJED, or other tokens
+- **Public Recognition**: Tips are publicly visible
+- **Instant Delivery**: Tips go directly to creator's wallet
+
+### Tipping Features
+- **Preset Amounts**: Quick-tip buttons for common amounts
+- **Custom Tipping**: Enter any amount manually
+- **Token Selection**: Choose from available tokens
+- **Tip Messages**: Include optional message with tip
+- **Anonymous Tipping**: Option to tip without revealing identity
+
+## 💰 Revenue Streams
+
+### Multiple Monetization Methods
+
+#### 1. Paid Media Content
+- **Premium Images**: High-resolution photos, artwork, exclusive content
+- **Video Content**: Educational videos, entertainment, tutorials
+- **Behind-the-Scenes**: Exclusive access to creative process
+- **Limited Editions**: Rare or time-limited content releases
+
+#### 2. Tipping Revenue
+- **Appreciation Tips**: Users tip for enjoyed content
+- **Support Tips**: Ongoing support from dedicated followers
+- **Milestone Tips**: Celebration tips for achievements
+- **Request Tips**: Tips for specific content requests
+
+#### 3. Token-Gated Content
+- **Holder-Only Posts**: Content exclusive to token holders
+- **Tiered Access**: Different content levels based on holdings
+- **Community Perks**: Special access for community members
+- **VIP Content**: Premium content for top supporters
+
+## 📊 Creator Dashboard *(Coming Soon)*
+
+### Revenue Analytics *(Coming Soon)*
+- **Real-time earnings** tracking across all revenue streams
+- **Historical data** showing income trends and patterns
+- **Top-performing content** analysis and insights
+- **Audience demographics** and engagement metrics
+
+### Payment Management *(Coming Soon)*
+- **Automatic withdrawals** to your connected wallet
+- **Tax reporting** tools for income documentation
+- **Revenue forecasting** based on historical performance
+- **Multi-currency support** for various Cardano tokens
+
+
+=====================================
+THE $POST TOKEN
+=====================================
+
+## Token Overview
+
+- **Name**: POST Token  
+- **Symbol**: $POST
+- **Blockchain**: Cardano
+- **Policy ID**: `c1c8943f8c5ab9330f744dbd4d6bd5ac8c08bd9360344ef3b7a84830`
+- **Total Supply**: 1 billion
+- **View on Cardanoscan**: [POST Token Details](https://cardanoscan.io/token/c1c8943f8c5ab9330f744dbd4d6bd5ac8c08bd9360344ef3b7a8483050726f6f664f66506f7374)
+
+## Core Utility
+
+The $POST token grants you revenue sharing in the Proof Of Post network equivalently to owning equity in a business. The revenue that the PoP network generates will be distributed to token holders of $POST.
+
+## Revenue Sources
+
+The PoP network generates revenue through multiple streams:
+
+- **Swap trading fees** from DexHunter embed on the APP
+- **Advertisement fees** 
+- **Verification badge fees**
+- **Paid content tax**
+- **Promoted posts**
+
+=====================================
+$POST TOKEN PRESALE
+=====================================
+
+## 🎯 Presale Overview
+
+- **Token Symbol**: $POST
+- **Total Supply**: 1,000,000,000 $POST
+- **Presale Allocation**: 500,000,000 $POST (50% of total supply)
+- **Minimum Purchase**: 100 ADA
+- **Presale Period**: September 27, 2025 12:00 UTC → October 3, 2025 12:59 UTC
+- **Presale Address**: `addr1q8xd2trvdsalrlnvmzkuqm97zyzxaulzfcn7xft5ydtfjxnm4n8qyfc5srfl7pfn8ucngtma8xzlxf4rv9k009xy4twq3jpahx`
+
+## 💰 Funding Goals
+
+- **Soft Cap**: 20,000 ADA *(Full refunds if not met)*
+- **Hard Cap**: 195,000 ADA *(Presale ends when reached)*
+- **Security Guarantee**: Presale backed and secured by Orca Labs
+
+## 📊 Tiered Pricing Structure
+
+### Tier Breakdown
+
+#### Tier 0 (Allowlist) - **Best Value**
+- **Rate**: 3,600 tokens per ADA
+- **Allocation**: 3,000 ADA capacity
+- **Total Tokens**: 10,800,000 $POST
+
+#### Tier 1 - **High Value**
+- **Rate**: 3,200 tokens per ADA
+- **Allocation**: 7,000 ADA capacity
+- **Total Tokens**: 22,400,000 $POST
+
+#### Tier 2 - **Good Value**
+- **Rate**: 3,000 tokens per ADA  
+- **Allocation**: 10,000 ADA capacity
+- **Total Tokens**: 30,000,000 $POST
+
+#### Tier 3 - **Standard Rate**
+- **Rate**: 2,800 tokens per ADA
+- **Allocation**: 42,000 ADA capacity
+- **Total Tokens**: 117,600,000 $POST
+
+#### Tier 4 (Final) - **Last Opportunity**
+- **Rate**: 2,400 tokens per ADA
+- **Allocation**: 133,000 ADA capacity  
+- **Total Tokens**: 319,200,000 $POST
+
+### Token Distribution
+
+- **Presale**: 50% (500,000,000 tokens)
+- **Liquidity Pool**: 20% (200,000,000 tokens)
+- **CEX Listings**: 5% (50,000,000 tokens)
+- **Team & Development**: 25% (250,000,000 tokens)
+
+## 🚀 Launch Details
+
+- **Launch Price**: 2,300 tokens per ADA *(Higher than final presale tier for instant profit)*
+- **Initial Liquidity**: 200,000,000 tokens (20%) + 86,957 ADA
+- **Profit Potential**: Up to +50% profit from Tier 0 rates at launch
+- **CEX Funding**: 5% of total supply reserved for exchange listings
+
+## 📈 Profit Potential Analysis
+
+Based on current tier rates vs launch price (2,300 tokens/ADA):
+
+- **Tier 0 (3,600/ADA)**: +56.5% profit at launch
+- **Tier 1 (3,200/ADA)**: +39.1% profit at launch
+- **Tier 2 (3,000/ADA)**: +30.4% profit at launch
+- **Tier 3 (2,800/ADA)**: +21.7% profit at launch
+- **Tier 4 (2,400/ADA)**: +4.3% profit at launch
+
+## 🔗 How to Participate
+
+1. **Visit Presale Page**: Access the official presale interface
+2. **Connect Wallet**: Choose from Eternl, Lace, or Vespr
+3. **Send ADA**: Minimum 100 ADA to participate
+4. **Receive Allocation**: Tokens distributed automatically based on current tier
+5. **Track Progress**: Monitor real-time presale progress and tier status
+
+## 💳 Supported Wallets
+
+- **Eternl**: Advanced browser extension with hardware wallet support
+- **Lace**: IOG's official wallet - popular choice
+- **Vespr**: Mobile-friendly community wallet
+
+## 🛡️ Security & Compliance
+
+### Security Guarantees
+- **Orca Labs Backed**: Professional security guarantee
+- **Smart Contract Audited**: Presale contract thoroughly reviewed
+- **On-Chain Transparency**: All transactions publicly verifiable
+- **Refund Protection**: Automatic refunds if soft cap not reached
+
+### Participation Requirements
+- **Personal Wallets Only**: Do NOT send from exchanges
+- **Minimum Contribution**: 100 ADA required
+- **Supported Networks**: Cardano Mainnet only
+- **Transaction Records**: Keep TX hash for potential refund processing
+
+=====================================
+USER GUIDES
+=====================================
+
+## Getting Started
+
+### What You'll Need
+- **A Cardano Wallet** (Eternl, Lace, or Vespr)
+- **Some ADA** for transactions and tips (minimum 5 ADA recommended)
+- **An ADA Handle** (optional, but recommended for verified identity)
+
+### 5-Minute Setup
+1. **Visit the Platform** - Go to proofofpost.io
+2. **Connect Your Wallet** - Click "Connect Wallet" and choose your preferred wallet
+3. **Sign Authentication** - Sign the message to verify wallet ownership
+4. **Complete Profile** - Add username, bio, and profile picture
+5. **Start Posting** - Create your first post and join the community!
+
+## Creating Content
+
+### Content Types
+- **Text Posts**: 280 character limit with rich formatting
+- **Media Posts**: Images, GIFs up to 10MB each
+- **Interactive Content**: Polls, threads, live updates
+
+### Monetization Options
+- **Paid Media**: Set custom prices in ADA for exclusive content
+- **Pricing Strategies**: 1-50 ADA depending on content type and quality
+
+### Content Strategy
+- **Building Your Brand**: Develop consistent voice and visual identity
+- **Content Calendar**: Maintain regular posting schedule
+- **Community Engagement**: Actively participate in discussions
+
+## Wallet Connection Guide
+
+### Supported Wallets
+- **Eternl**: Advanced features, hardware wallet support
+- **Lace**: IOG's official wallet, modern design
+- **Vespr**: Community-focused features
+
+### Connection Process
+1. Install wallet extension in browser
+2. Create or restore wallet with seed phrase
+3. Visit Proof of Post and click "Connect Wallet"
+4. Select your wallet from available options
+5. Grant permissions when prompted
+6. Sign authentication message to verify ownership
+
+### Security Features
+- **Challenge-response system**: Prevents replay attacks
+- **Message signing**: Uses CIP-8 standard for security
+- **No private key exposure**: Platform never accesses your keys
+- **Session management**: Secure JWT tokens for authenticated sessions
+
+## Monetizing Content
+
+### Paid Media System
+1. Create post with image or video
+2. Toggle "Paid Media" option in composer
+3. Set price in ADA (minimum 1 ADA)
+4. Add preview text to entice viewers
+5. Publish with blurred preview
+
+### Tipping System
+- **Automatic tip buttons** appear on all posts
+- **Multiple amounts**: Users can tip 1, 5, 10+ ADA
+- **Multi-token support**: Receive various Cardano tokens
+- **Instant delivery**: Tips go directly to your wallet
+
+### Success Strategies
+- **Quality content**: High-value posts receive more tips
+- **Community engagement**: Active participation builds supporters
+- **Consistent posting**: Regular content keeps audience engaged
+
+=====================================
+DEVELOPER RESOURCES
+=====================================
+
+## API Documentation
+
+### Authentication
+All API requests require JWT authentication obtained through wallet signature verification.
+
+```
+POST /api/auth/challenge
+POST /api/auth/verify
+POST /api/auth/refresh
+```
+
+### Posts API
+```
+GET  /api/posts             // Get feed posts
+POST /api/posts             // Create new post
+GET  /api/posts/:id         // Get specific post
+POST /api/posts/:id/react   // Add reaction
+POST /api/posts/:id/boost   // Boost/retweet post
+```
+
+### Users API
+```
+GET  /api/users/:id         // Get user profile
+PUT  /api/profile           // Update own profile
+GET  /api/profile/feed      // Get personalized feed
+POST /api/profile/follow    // Follow/unfollow user
+```
+
+### Search API
+```
+GET  /api/search           // Search posts/users/tokens
+GET  /api/topics           // Get trending topics
+GET  /api/tokens           // Get token information
+```
+
+### Payments API
+```
+POST /api/payments/intent  // Create payment intent
+POST /api/payments/verify  // Verify payment completion
+GET  /api/payments/history // Get payment history
+```
+
+### Rate Limits
+- **Authenticated requests**: 1000 requests per hour
+- **Post creation**: 10 posts per minute
+- **Search requests**: 60 requests per minute
+- **File uploads**: 5 uploads per minute
+
+## Database Schema
+
+### Core Tables
+- **users** - User profiles and authentication
+- **posts** - Content and post metadata
+- **reactions** - User reactions to posts
+- **follows** - User follow relationships
+- **tips** - Token tips sent to posts
+- **tokens** - Token metadata cache
+- **paid_posts** - Monetized content configuration
+
+### Users Table
+```sql
+CREATE TABLE users (
+  id TEXT PRIMARY KEY,
+  wallet_address TEXT UNIQUE NOT NULL,
+  username TEXT UNIQUE,
+  ada_handle TEXT UNIQUE,
+  display_name TEXT,
+  bio TEXT,
+  avatar_url TEXT,
+  banner_url TEXT,
+  follower_count INTEGER DEFAULT 0,
+  following_count INTEGER DEFAULT 0,
+  post_count INTEGER DEFAULT 0,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+### Posts Table
+```sql
+CREATE TABLE posts (
+  id TEXT PRIMARY KEY,
+  user_id TEXT NOT NULL,
+  content TEXT NOT NULL,
+  media_urls TEXT, -- JSON array of IPFS URLs
+  signature TEXT, -- Cryptographic signature
+  reaction_counts TEXT DEFAULT '{"like":0,"rocket":0,"diamond":0,"degen":0}',
+  boost_count INTEGER DEFAULT 0,
+  reply_count INTEGER DEFAULT 0,
+  is_paid_content BOOLEAN DEFAULT FALSE,
+  price_lovelace INTEGER DEFAULT 0,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+## Integration Guide
+
+### Basic Setup
+```typescript
+import { ProofOfPostClient } from '@proofofpost/sdk';
+
+const client = new ProofOfPostClient({
+  baseUrl: 'https://api.proofofpost.io',
+  walletProvider: 'eternl', // or 'lace', 'vespr'
+});
+
+// Connect wallet and authenticate
+await client.connect();
+const isAuthenticated = await client.authenticate();
+```
+
+### Wallet Connection Flow
+```typescript
+async connectWallet(walletName: string) {
+  // Check if wallet is available
+  if (!window.cardano?.[walletName]) {
+    throw new Error(`${walletName} wallet not found`);
+  }
+
+  // Enable wallet
+  const wallet = await window.cardano[walletName].enable();
+  
+  // Get wallet address
+  const addresses = await wallet.getUsedAddresses();
+  const address = addresses[0];
+
+  return { success: true, address };
+}
+```
+
+### Creating Posts
+```typescript
+async createPost(content: string, options: {
+  mediaFiles?: File[];
+  isPaidContent?: boolean;
+  priceAda?: number;
+  signPost?: boolean;
+} = {}) {
+  // Upload media files if provided
+  let mediaUrls: string[] = [];
+  if (options.mediaFiles?.length) {
+    for (const file of options.mediaFiles) {
+      const uploadResponse = await this.uploadMedia(file);
+      mediaUrls.push(uploadResponse.url);
+    }
+  }
+
+  // Prepare post data
+  const postData = {
+    content,
+    mediaUrls,
+    isPaidContent: options.isPaidContent || false,
+    priceLovelace: options.priceAda ? options.priceAda * 1_000_000 : 0
+  };
+
+  // Create post
+  const response = await fetch('/api/posts', {
+    method: 'POST',
+    headers: this.auth.getAuthHeaders(),
+    body: JSON.stringify(postData)
+  });
+
+  return await response.json();
+}
+```
+
+### Payment Integration
+```typescript
+async tipPost(postId: string, amountAda: number, message?: string) {
+  // Create payment intent
+  const intentResponse = await fetch('/api/payments/intent', {
+    method: 'POST',
+    headers: this.auth.getAuthHeaders(),
+    body: JSON.stringify({
+      postId,
+      type: 'tip',
+      amountLovelace: amountAda * 1_000_000,
+      message
+    })
+  });
+
+  const { paymentId, recipientAddress, amountLovelace } = await intentResponse.json();
+
+  // Build and submit transaction using Lucid
+  const tx = await lucid
+    .newTx()
+    .payToAddress(recipientAddress, { lovelace: BigInt(amountLovelace) })
+    .complete();
+
+  const signedTx = await tx.sign().complete();
+  const txHash = await signedTx.submit();
+
+  // Verify payment
+  const verifyResponse = await fetch(`/api/payments/${paymentId}/verify`, {
+    method: 'POST',
+    headers: this.auth.getAuthHeaders(),
+    body: JSON.stringify({ transactionHash: txHash })
+  });
+
+  return await verifyResponse.json();
+}
+```
+
+=====================================
+SOCIAL LINKS
+=====================================
+
+## Official Links
+
+- **Protocol**: proofofpost.io
+- **Twitter/X**: @proofofpost_io
+- **Discord**: Join our community
+
+=====================================
+SUMMARY
+=====================================
+
+This documentation covers all aspects of Proof of Post:
+
+1. **Platform Overview** - What is Proof of Post and its vision
+2. **Key Features** - Wallet authentication, social features, monetization
+3. **Technical Architecture** - Technology stack and system design
+4. **Social Media Features** - Content creation, interactions, discovery
+5. **Token Ecosystem** - Token integration and trading features
+6. **Wallet Integration** - Supported wallets and connection process
+7. **Content Monetization** - Paid media, tipping, and creator economy
+8. **$POST Token** - Native utility token and revenue sharing
+9. **Presale Information** - Token presale details and participation
+10. **User Guides** - Getting started, creating content, monetization
+11. **Developer Resources** - API documentation, database schema, integration guides
+
+Proof of Post represents the future of decentralized social media on Cardano, combining familiar social features with blockchain technology to create true content ownership, direct creator monetization, and a token-powered economy.
+
+===============================================================================
+                            END OF DOCUMENTATION
+===============================================================================
