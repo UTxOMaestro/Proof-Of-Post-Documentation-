@@ -9,7 +9,7 @@ Join the exclusive presale for the $POST token and be among the first to own a p
 - **Presale Allocation**: 500,000,000 $POST (50% of total supply)
 - **Minimum Purchase**: 100 ADA
 - **Presale Period**: September 27, 2025 12:00 UTC → October 3, 2025 12:59 UTC
-- **Presale Address**: `addr1q8xd2trvdsalrlnvmzkuqm97zyzxaulzfcn7xft5ydtfjxnm4n8qyfc5srfl7pfn8ucngtma8xzlxf4rv9k009xy4twq3jpahx`
+- **Participation Instructions**: Follow the instructions on our Discord
 
 
 ## Funding Goals
