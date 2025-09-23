@@ -1,0 +1,1941 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Comprehensive documentation for the Proof of Post social media platform - a Cardano-native decentralized social network">
+      
+      
+        <meta name="author" content="UTxO Maestro">
+      
+      
+        <link rel="canonical" href="https://docs.proofofpost.io/features/token-ecosystem/">
+      
+      
+        <link rel="prev" href="../wallet-integration/">
+      
+      
+        <link rel="next" href="../content-monetization/">
+      
+      
+      <link rel="icon" href="../../images/header-logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Token Ecosystem - Proof of Post Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#token-ecosystem" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Proof of Post Docs" class="md-header__button md-logo" aria-label="Proof of Post Docs" data-md-component="logo">
+      
+  <img src="../../images/header-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Proof of Post Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Token Ecosystem
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Proof of Post Docs" class="md-nav__button md-logo" aria-label="Proof of Post Docs" data-md-component="logo">
+      
+  <img src="../../images/header-logo.png" alt="logo">
+
+    </a>
+    Proof of Post Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Platform Overview
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Platform Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../platform/what-is-proof-of-post/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    What is Proof of Post?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../platform/key-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Key Features
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../platform/technical-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Tokenomics
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tokenomics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/the-post-token/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The POST Token
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/presale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Presale
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Core Features
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Core Features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../social-media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Social Media Features
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wallet-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Wallet Integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Token Ecosystem
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Token Ecosystem
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#disclaimer-all-features-and-functionalities-described-in-this-documentation-are-subject-to-change-during-development-the-final-implementation-may-differ-from-what-is-described-here" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disclaimer: All features and functionalities described in this documentation are subject to change during development. The final implementation may differ from what is described here.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#token-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Discovery
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Token Discovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comprehensive-token-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprehensive Token Database
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search &amp; Discovery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#token-profiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Profiles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Token Profiles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comprehensive-token-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprehensive Token Pages
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comprehensive Token Pages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#market-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Market Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#social-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Social Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#token-mentions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Mentions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Token Mentions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automatic-token-linking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatic Token Linking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mention-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mention Analytics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#price-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Price Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Price Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#real-time-price-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-time Price Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#price-display-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Price Display Features
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#token-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Interactions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Token Interactions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipping-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipping System
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trading-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trading Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#token-communities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Communities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Token Communities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#community-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#engagement-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Engagement Tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#watchlist-portfolio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Watchlist &amp; Portfolio
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Watchlist &amp; Portfolio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#personal-watchlist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personal Watchlist
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portfolio-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portfolio Features
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#token-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Alerts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Token Alerts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#price-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Price Alerts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#social-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Social Alerts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developer-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Developer Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Developer Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#token-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration Features
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visual Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#token-branding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Branding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Components
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../content-monetization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Content Monetization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    User Guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            User Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/creating-content/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating Content
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/wallet-connection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Wallet Connection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/monetizing-content/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Monetizing Content
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Developer Resources
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Developer Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/api-documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API Documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Community
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Community
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../social/links/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Social Links
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#disclaimer-all-features-and-functionalities-described-in-this-documentation-are-subject-to-change-during-development-the-final-implementation-may-differ-from-what-is-described-here" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disclaimer: All features and functionalities described in this documentation are subject to change during development. The final implementation may differ from what is described here.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#token-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Discovery
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Token Discovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comprehensive-token-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprehensive Token Database
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search &amp; Discovery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#token-profiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Profiles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Token Profiles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comprehensive-token-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprehensive Token Pages
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comprehensive Token Pages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#market-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Market Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#social-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Social Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#token-mentions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Mentions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Token Mentions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automatic-token-linking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatic Token Linking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mention-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mention Analytics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#price-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Price Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Price Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#real-time-price-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-time Price Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#price-display-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Price Display Features
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#token-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Interactions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Token Interactions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipping-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipping System
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trading-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trading Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#token-communities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Communities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Token Communities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#community-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#engagement-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Engagement Tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#watchlist-portfolio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Watchlist &amp; Portfolio
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Watchlist &amp; Portfolio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#personal-watchlist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personal Watchlist
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portfolio-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portfolio Features
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#token-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Alerts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Token Alerts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#price-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Price Alerts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#social-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Social Alerts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developer-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Developer Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Developer Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#token-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration Features
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visual Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#token-branding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Branding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Components
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="token-ecosystem">Token Ecosystem<a class="headerlink" href="#token-ecosystem" title="Permanent link">&para;</a></h1>
+<p>Proof of Post seamlessly integrates Cardano's rich token ecosystem, making it easy to discover, discuss, and interact with tokens directly within the social media experience.</p>
+<hr />
+<h2 id="disclaimer-all-features-and-functionalities-described-in-this-documentation-are-subject-to-change-during-development-the-final-implementation-may-differ-from-what-is-described-here"><strong>Disclaimer</strong>: All features and functionalities described in this documentation are subject to change during development. The final implementation may differ from what is described here.<a class="headerlink" href="#disclaimer-all-features-and-functionalities-described-in-this-documentation-are-subject-to-change-during-development-the-final-implementation-may-differ-from-what-is-described-here" title="Permanent link">&para;</a></h2>
+<h2 id="token-discovery">Token Discovery<a class="headerlink" href="#token-discovery" title="Permanent link">&para;</a></h2>
+<h3 id="comprehensive-token-database">Comprehensive Token Database<a class="headerlink" href="#comprehensive-token-database" title="Permanent link">&para;</a></h3>
+<p>The platform maintains an extensive database of Cardano tokens with:
+- <strong>Token Metadata</strong>: Names, tickers, descriptions, and images
+- <strong>Policy Information</strong>: Policy IDs and asset names
+- <strong>Holder Statistics</strong>: Number of holders and distribution
+- <strong>Price Data</strong>: Real-time pricing via DexHunter API
+- <strong>Trading Volume</strong>: 24h volume and market activity
+- <strong>Social Metrics</strong>: Mention frequency and community engagement</p>
+<h3 id="search-discovery">Search &amp; Discovery<a class="headerlink" href="#search-discovery" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Token Search</strong>: Find tokens by ticker, name, or policy ID</li>
+<li><strong>Trending Tokens</strong>: Discover popular tokens based on mentions</li>
+<li><strong>New Listings</strong>: Recently added tokens to the ecosystem</li>
+<li><strong>Category Filtering</strong>: Browse by token type (utility, meme, governance)</li>
+<li><strong>Watchlist</strong>: Follow your favorite tokens for updates</li>
+</ul>
+<h2 id="token-profiles">Token Profiles<a class="headerlink" href="#token-profiles" title="Permanent link">&para;</a></h2>
+<h3 id="comprehensive-token-pages">Comprehensive Token Pages<a class="headerlink" href="#comprehensive-token-pages" title="Permanent link">&para;</a></h3>
+<p>Each token gets a dedicated profile page featuring:</p>
+<h4 id="basic-information">Basic Information<a class="headerlink" href="#basic-information" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Token Name &amp; Ticker</strong>: Official project identification</li>
+<li><strong>Token Logo</strong>: High-resolution project branding</li>
+<li><strong>Description</strong>: Project overview and use case</li>
+<li><strong>Total Supply</strong>: Maximum token supply information</li>
+<li><strong>Circulating Supply</strong>: Currently available tokens</li>
+</ul>
+<h4 id="market-data">Market Data<a class="headerlink" href="#market-data" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Current Price</strong>: Real-time price in ADA and USD</li>
+<li><strong>24h Change</strong>: Price movement percentage</li>
+<li><strong>Market Cap</strong>: Total market valuation</li>
+<li><strong>Trading Volume</strong>: 24-hour trading activity</li>
+<li><strong>Price Charts</strong>: Historical price performance</li>
+</ul>
+<h4 id="social-integration">Social Integration<a class="headerlink" href="#social-integration" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Mention Feed</strong>: All posts mentioning the token</li>
+<li><strong>Community Stats</strong>: Follower count and engagement</li>
+<li><strong>Official Links</strong>: Website, Twitter, Discord, Telegram</li>
+<li><strong>Holder Analysis</strong>: Top holders and distribution charts</li>
+</ul>
+<h2 id="token-mentions">Token Mentions<a class="headerlink" href="#token-mentions" title="Permanent link">&para;</a></h2>
+<h3 id="automatic-token-linking">Automatic Token Linking<a class="headerlink" href="#automatic-token-linking" title="Permanent link">&para;</a></h3>
+<p>When users mention tokens in posts using the <code>$TOKEN</code> format:
+- <strong>Automatic Detection</strong>: Platform recognizes token mentions
+- <strong>Clickable Links</strong>: Mentions become links to token profiles
+- <strong>Real-time Validation</strong>: Verify token exists in the database
+- <strong>Price Display</strong>: Show current price on hover
+- <strong>Trending Impact</strong>: Mentions contribute to trending calculations</p>
+<h3 id="mention-analytics">Mention Analytics<a class="headerlink" href="#mention-analytics" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Mention Frequency</strong>: Track how often tokens are discussed</li>
+<li><strong>Sentiment Analysis</strong>: Positive/negative mention tracking</li>
+<li><strong>Influential Mentions</strong>: Posts from verified or high-reputation users</li>
+<li><strong>Mention History</strong>: Historical mention trends and patterns</li>
+</ul>
+<h2 id="price-integration">Price Integration<a class="headerlink" href="#price-integration" title="Permanent link">&para;</a></h2>
+<h3 id="real-time-price-data">Real-time Price Data<a class="headerlink" href="#real-time-price-data" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>DexHunter API Integration</strong>: Reliable price feeds from Cardano DEXs</li>
+<li><strong>Multiple Price Sources</strong>: Aggregated data for accuracy</li>
+<li><strong>Price Alerts</strong>: Notify users of significant price movements</li>
+<li><strong>Historical Charts</strong>: Price history with various timeframes</li>
+<li><strong>Volume Analysis</strong>: Trading volume trends and patterns</li>
+</ul>
+<h3 id="price-display-features">Price Display Features<a class="headerlink" href="#price-display-features" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Inline Prices</strong>: Show current price next to token mentions</li>
+<li><strong>Price Change Indicators</strong>: Color-coded price movement</li>
+<li><strong>Portfolio Tracking</strong>: Track value of tokens you hold</li>
+<li><strong>Watchlist Prices</strong>: Monitor prices of followed tokens</li>
+<li><strong>Price Notifications</strong>: Alerts for significant price changes</li>
+</ul>
+<h2 id="token-interactions">Token Interactions<a class="headerlink" href="#token-interactions" title="Permanent link">&para;</a></h2>
+<h3 id="tipping-system">Tipping System<a class="headerlink" href="#tipping-system" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Multi-Token Tipping</strong>: Tip creators with any supported token</li>
+<li><strong>Custom Amounts</strong>: Set specific tip amounts</li>
+<li><strong>Tip History</strong>: Track tips sent and received</li>
+<li><strong>Popular Tip Tokens</strong>: See which tokens are commonly used for tips</li>
+<li><strong>Tip Leaderboards</strong>: Top tippers and recipients</li>
+</ul>
+<h3 id="trading-integration">Trading Integration<a class="headerlink" href="#trading-integration" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Swap Widget</strong>: Direct token trading within the platform</li>
+<li><strong>DEX Integration</strong>: Connect to popular Cardano DEXs</li>
+<li><strong>Trading Pairs</strong>: Discover available trading pairs</li>
+<li><strong>Liquidity Information</strong>: Pool depth and trading fees</li>
+<li><strong>Trade History</strong>: Track your trading activity</li>
+</ul>
+<h2 id="token-communities">Token Communities<a class="headerlink" href="#token-communities" title="Permanent link">&para;</a></h2>
+<h3 id="community-features">Community Features<a class="headerlink" href="#community-features" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Token-Specific Feeds</strong>: Dedicated feeds for each token's mentions</li>
+<li><strong>Community Moderators</strong>: Verified community representatives</li>
+<li><strong>Official Announcements</strong>: Highlighted posts from project teams</li>
+<li><strong>Community Guidelines</strong>: Token-specific posting rules</li>
+<li><strong>Event Calendar</strong>: Upcoming project milestones and events</li>
+</ul>
+<h3 id="engagement-tools">Engagement Tools<a class="headerlink" href="#engagement-tools" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Token Holders</strong>: Verify token ownership for exclusive content</li>
+<li><strong>Holder Verification</strong>: Prove token holdings for credibility</li>
+<li><strong>Community Polls</strong>: Token holder voting on proposals</li>
+<li><strong>AMA Sessions</strong>: Ask Me Anything with project founders</li>
+<li><strong>Community Challenges</strong>: Engagement campaigns and contests</li>
+</ul>
+<h2 id="watchlist-portfolio">Watchlist &amp; Portfolio<a class="headerlink" href="#watchlist-portfolio" title="Permanent link">&para;</a></h2>
+<h3 id="personal-watchlist">Personal Watchlist<a class="headerlink" href="#personal-watchlist" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Token Following</strong>: Follow tokens for updates and news</li>
+<li><strong>Custom Lists</strong>: Create themed token collections</li>
+<li><strong>Portfolio Tracking</strong>: Monitor your token holdings</li>
+<li><strong>Performance Metrics</strong>: Track gains/losses over time</li>
+<li><strong>Rebalancing Alerts</strong>: Notifications for portfolio changes</li>
+</ul>
+<h3 id="portfolio-features">Portfolio Features<a class="headerlink" href="#portfolio-features" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Automatic Detection</strong>: Detect tokens in connected wallets</li>
+<li><strong>Portfolio Value</strong>: Total portfolio worth in ADA/USD</li>
+<li><strong>Asset Allocation</strong>: Pie charts showing token distribution</li>
+<li><strong>Performance History</strong>: Track portfolio performance over time</li>
+<li><strong>Tax Reporting</strong>: Export data for tax calculations</li>
+</ul>
+<h2 id="token-alerts">Token Alerts<a class="headerlink" href="#token-alerts" title="Permanent link">&para;</a></h2>
+<h3 id="price-alerts">Price Alerts<a class="headerlink" href="#price-alerts" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Price Targets</strong>: Notify when tokens reach specific prices</li>
+<li><strong>Percentage Changes</strong>: Alerts for significant price movements</li>
+<li><strong>Volume Spikes</strong>: Notifications for unusual trading activity</li>
+<li><strong>New Listings</strong>: Alerts when tokens are newly listed</li>
+<li><strong>Delisting Warnings</strong>: Notifications for tokens being removed</li>
+</ul>
+<h3 id="social-alerts">Social Alerts<a class="headerlink" href="#social-alerts" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Mention Spikes</strong>: When tokens are suddenly trending</li>
+<li><strong>Influencer Posts</strong>: When notable users mention specific tokens</li>
+<li><strong>Community Milestones</strong>: Holder count or volume achievements</li>
+<li><strong>Project Updates</strong>: Official announcements from project teams</li>
+<li><strong>Regulatory News</strong>: Important regulatory developments</li>
+</ul>
+<h2 id="developer-tools">Developer Tools<a class="headerlink" href="#developer-tools" title="Permanent link">&para;</a></h2>
+<h3 id="token-api">Token API<a class="headerlink" href="#token-api" title="Permanent link">&para;</a></h3>
+<pre><code class="language-typescript">// Get token information
+const tokenInfo = await fetch('/api/tokens/search?q=ADA');
+
+// Get token price
+const priceData = await fetch('/api/tokens/price/ada');
+
+// Get token mentions
+const mentions = await fetch('/api/tokens/mentions/ada?limit=50');
+
+// Track token in watchlist
+await fetch('/api/tokens/watch', {
+  method: 'POST',
+  body: JSON.stringify({ tokenId: 'ada' })
+});
+</code></pre>
+<h3 id="integration-features">Integration Features<a class="headerlink" href="#integration-features" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Token Widgets</strong>: Embeddable price and info widgets</li>
+<li><strong>Price Feeds</strong>: Real-time WebSocket price updates</li>
+<li><strong>Historical Data</strong>: Access to historical price and volume data</li>
+<li><strong>Metadata API</strong>: Token information and imagery</li>
+<li><strong>Social Metrics</strong>: Mention counts and sentiment data</li>
+</ul>
+<h2 id="visual-integration">Visual Integration<a class="headerlink" href="#visual-integration" title="Permanent link">&para;</a></h2>
+<h3 id="token-branding">Token Branding<a class="headerlink" href="#token-branding" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Token Logos</strong>: High-quality logos throughout the platform</li>
+<li><strong>Color Schemes</strong>: Token-specific color theming</li>
+<li><strong>Brand Guidelines</strong>: Consistent token presentation</li>
+<li><strong>Icon Sets</strong>: Token icons for various contexts</li>
+<li><strong>Badge Systems</strong>: Achievement badges for token communities</li>
+</ul>
+<h3 id="ui-components">UI Components<a class="headerlink" href="#ui-components" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Token Cards</strong>: Standardized token information display</li>
+<li><strong>Price Tickers</strong>: Scrolling price displays</li>
+<li><strong>Portfolio Widgets</strong>: Personal holdings visualization</li>
+<li><strong>Trading Charts</strong>: Interactive price charts</li>
+<li><strong>Trend Indicators</strong>: Visual trend and momentum indicators</li>
+</ul>
+<hr />
+<p>The token ecosystem integration makes Proof of Post the premier destination for Cardano token communities, combining social media with comprehensive token information and trading capabilities.</p>
+<p>Next: Learn about <a href="../content-monetization/">Content Monetization</a> to discover how creators can earn directly from their content.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Proof of Post. All rights reserved.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "content.code.copy", "search.suggest", "search.highlight", "navigation.expand"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

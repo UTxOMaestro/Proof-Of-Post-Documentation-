@@ -1,0 +1,1453 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Comprehensive documentation for the Proof of Post social media platform - a Cardano-native decentralized social network">
+      
+      
+        <meta name="author" content="UTxO Maestro">
+      
+      
+        <link rel="canonical" href="https://docs.proofofpost.io/user-guide/creating-content/">
+      
+      
+        <link rel="prev" href="../getting-started/">
+      
+      
+        <link rel="next" href="../wallet-connection/">
+      
+      
+      <link rel="icon" href="../../images/header-logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Creating Content - Proof of Post Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#creating-content" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Proof of Post Docs" class="md-header__button md-logo" aria-label="Proof of Post Docs" data-md-component="logo">
+      
+  <img src="../../images/header-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Proof of Post Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Creating Content
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Proof of Post Docs" class="md-nav__button md-logo" aria-label="Proof of Post Docs" data-md-component="logo">
+      
+  <img src="../../images/header-logo.png" alt="logo">
+
+    </a>
+    Proof of Post Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Platform Overview
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Platform Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../platform/what-is-proof-of-post/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    What is Proof of Post?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../platform/key-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Key Features
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../platform/technical-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Tokenomics
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tokenomics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/the-post-token/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The POST Token
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/presale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Presale
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Core Features
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Core Features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/social-media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Social Media Features
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/wallet-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Wallet Integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/token-ecosystem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Token Ecosystem
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/content-monetization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Content Monetization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    User Guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            User Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Creating Content
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating Content
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#content-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#text-posts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text Posts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#media-posts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media Posts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactive-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interactive Content
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-composer-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Composer Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Composer Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto-suggestions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auto-Suggestions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content-enhancement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Enhancement
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monetization-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monetization Options
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Monetization Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paid-media" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paid Media
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pricing-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pricing Strategies
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Analytics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Analytics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-performance-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post Performance Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audience-insights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audience Insights
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Strategy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building-your-brand" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Your Brand
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content-calendar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Calendar
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wallet-connection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Wallet Connection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../monetizing-content/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Monetizing Content
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Developer Resources
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Developer Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/api-documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API Documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Community
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Community
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../social/links/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Social Links
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#content-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#text-posts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text Posts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#media-posts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media Posts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactive-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interactive Content
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-composer-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Composer Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Composer Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto-suggestions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auto-Suggestions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content-enhancement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Enhancement
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monetization-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monetization Options
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Monetization Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paid-media" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paid Media
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pricing-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pricing Strategies
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Analytics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Analytics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-performance-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post Performance Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audience-insights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audience Insights
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Strategy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building-your-brand" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Your Brand
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content-calendar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Calendar
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="creating-content">Creating Content<a class="headerlink" href="#creating-content" title="Permanent link">&para;</a></h1>
+<p>Master the art of content creation on Proof of Post with this comprehensive guide covering everything from basic posts to advanced monetization strategies.</p>
+<h2 id="content-types">Content Types<a class="headerlink" href="#content-types" title="Permanent link">&para;</a></h2>
+<h3 id="text-posts">Text Posts<a class="headerlink" href="#text-posts" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Character limit</strong>: 280 characters (like Twitter)</li>
+<li><strong>Rich formatting</strong>: Automatic URL, mention, and hashtag detection</li>
+<li><strong>Emoji support</strong>: Use emojis to express emotions and reactions</li>
+<li><strong>Line breaks</strong>: Use Shift+Enter for line breaks within posts</li>
+</ul>
+<h3 id="media-posts">Media Posts<a class="headerlink" href="#media-posts" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Images</strong>: JPEG, PNG, WebP up to 10MB each</li>
+<li><strong>GIFs</strong>: Via Giphy integration or direct upload</li>
+<li><strong>Multiple media</strong>: Up to 4 images per post</li>
+</ul>
+<h3 id="interactive-content">Interactive Content<a class="headerlink" href="#interactive-content" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Polls</strong>: Create community polls (coming soon)</li>
+<li><strong>Threads</strong>: Connect multiple posts for long-form content</li>
+<li><strong>Live updates</strong>: Real-time posting during events</li>
+</ul>
+<h2 id="advanced-composer-features">Advanced Composer Features<a class="headerlink" href="#advanced-composer-features" title="Permanent link">&para;</a></h2>
+<h3 id="auto-suggestions">Auto-Suggestions<a class="headerlink" href="#auto-suggestions" title="Permanent link">&para;</a></h3>
+<p>The composer provides intelligent suggestions as you type:
+- <strong>@mentions</strong>: Suggests usernames and ADA handles
+- <strong>$tokens</strong>: Suggests Cardano tokens and their tickers
+- <strong>#hashtags</strong>: Suggests popular and trending hashtags</p>
+<h3 id="content-enhancement">Content Enhancement<a class="headerlink" href="#content-enhancement" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>URL shortening</strong>: Long URLs are automatically shortened</li>
+<li><strong>Link previews</strong>: Rich previews for shared links</li>
+<li><strong>Media optimization</strong>: Images are automatically optimized for web</li>
+<li><strong>Accessibility</strong>: Alt text support for images</li>
+</ul>
+<h2 id="monetization-options">Monetization Options<a class="headerlink" href="#monetization-options" title="Permanent link">&para;</a></h2>
+<h3 id="paid-media">Paid Media<a class="headerlink" href="#paid-media" title="Permanent link">&para;</a></h3>
+<p>Transform your visual content into revenue:
+1. <strong>Upload your image</strong>
+2. <strong>Toggle "Paid Media" option</strong>
+3. <strong>Set price in ADA</strong> (minimum 1 ADA)
+4. <strong>Add compelling preview text</strong>
+5. <strong>Publish with blurred preview</strong></p>
+<h3 id="pricing-strategies">Pricing Strategies<a class="headerlink" href="#pricing-strategies" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Premium content</strong>: 10-50 ADA for exclusive, high-quality content</li>
+<li><strong>Educational content</strong>: 5-20 ADA for tutorials and guides</li>
+<li><strong>Entertainment</strong>: 1-10 ADA for memes and casual content</li>
+<li><strong>Exclusive access</strong>: 20+ ADA for behind-the-scenes content</li>
+</ul>
+<h2 id="content-analytics">Content Analytics<a class="headerlink" href="#content-analytics" title="Permanent link">&para;</a></h2>
+<h3 id="post-performance-metrics">Post Performance Metrics<a class="headerlink" href="#post-performance-metrics" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Views</strong>: Number of times your post was seen <em>(Coming Soon)</em></li>
+<li><strong>Reactions</strong>: Likes, rockets, diamonds, and degen reactions</li>
+<li><strong>Boosts</strong>: Times your post was shared/retweeted</li>
+<li><strong>Comments</strong>: Replies and discussion generated</li>
+<li><strong>Tips received</strong>: ADA and tokens received from supporters</li>
+</ul>
+<h3 id="audience-insights">Audience Insights<a class="headerlink" href="#audience-insights" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Follower growth</strong>: Track how content affects your following</li>
+<li><strong>Engagement rate</strong>: Percentage of followers who interact</li>
+<li><strong>Best performing content</strong>: Identify what resonates with your audience</li>
+<li><strong>Optimal posting times</strong>: When your audience is most active</li>
+</ul>
+<h2 id="content-strategy">Content Strategy<a class="headerlink" href="#content-strategy" title="Permanent link">&para;</a></h2>
+<h3 id="building-your-brand">Building Your Brand<a class="headerlink" href="#building-your-brand" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Consistent voice</strong>: Develop a recognizable posting style</li>
+<li><strong>Visual identity</strong>: Use consistent colors and aesthetics</li>
+<li><strong>Niche expertise</strong>: Become known for specific topics</li>
+<li><strong>Community engagement</strong>: Actively participate in discussions</li>
+</ul>
+<h3 id="content-calendar">Content Calendar<a class="headerlink" href="#content-calendar" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Regular posting</strong>: Maintain consistent posting schedule</li>
+<li><strong>Content variety</strong>: Mix text, images, and interactive content</li>
+<li><strong>Trending topics</strong>: Participate in relevant discussions</li>
+<li><strong>Seasonal content</strong>: Align with crypto market cycles and events</li>
+</ul>
+<p>Ready to start monetizing? Learn about <a href="../monetizing-content/">Monetizing Content</a> next.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Proof of Post. All rights reserved.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "content.code.copy", "search.suggest", "search.highlight", "navigation.expand"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

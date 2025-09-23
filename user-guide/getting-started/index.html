@@ -1,0 +1,2162 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Comprehensive documentation for the Proof of Post social media platform - a Cardano-native decentralized social network">
+      
+      
+        <meta name="author" content="UTxO Maestro">
+      
+      
+        <link rel="canonical" href="https://docs.proofofpost.io/user-guide/getting-started/">
+      
+      
+        <link rel="prev" href="../../features/content-monetization/">
+      
+      
+        <link rel="next" href="../creating-content/">
+      
+      
+      <link rel="icon" href="../../images/header-logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Getting Started - Proof of Post Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#getting-started" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Proof of Post Docs" class="md-header__button md-logo" aria-label="Proof of Post Docs" data-md-component="logo">
+      
+  <img src="../../images/header-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Proof of Post Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Getting Started
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Proof of Post Docs" class="md-nav__button md-logo" aria-label="Proof of Post Docs" data-md-component="logo">
+      
+  <img src="../../images/header-logo.png" alt="logo">
+
+    </a>
+    Proof of Post Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Platform Overview
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Platform Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../platform/what-is-proof-of-post/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    What is Proof of Post?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../platform/key-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Key Features
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../platform/technical-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Tokenomics
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tokenomics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/the-post-token/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The POST Token
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/presale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Presale
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Core Features
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Core Features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/social-media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Social Media Features
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/wallet-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Wallet Integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/token-ecosystem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Token Ecosystem
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/content-monetization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Content Monetization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    User Guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            User Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Start
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Start">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-youll-need" class="md-nav__link">
+    <span class="md-ellipsis">
+      What You'll Need
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-minute-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      5-Minute Setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connecting-your-wallet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connecting Your Wallet
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connecting Your Wallet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-wallet-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step-by-Step Wallet Connection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-Step Wallet Connection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-choose-your-wallet" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Choose Your Wallet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-grant-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Grant Permissions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-sign-authentication-challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Sign Authentication Challenge
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-complete-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Complete Connection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-connection-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting Connection Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting Connection Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wallet-not-detected" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wallet Not Detected
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connection-failed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection Failed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentication-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentication Errors
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-your-profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Up Your Profile
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setting Up Your Profile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#profile-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Profile Information
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Profile Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profile-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Profile Images
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#social-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      Social Links
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identity-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identity Verification
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identity Verification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ada-handle-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADA Handle Integration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verification-badge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification Badge
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-your-first-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Your First Post
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Your First Post">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-the-post-composer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using the Post Composer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the Post Composer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-access-the-composer" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Access the Composer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-write-your-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Write Your Content
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-add-media-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Add Media (Optional)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-use-special-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Use Special Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-post-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Post Options
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#writing-engaging-posts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Writing Engaging Posts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-content-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Content Tips
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discovering-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discovering Content
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Discovering Content">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exploring-the-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exploring the Platform
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exploring the Platform">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#home-feed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Home Feed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search &amp; Discovery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation Tips
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pro-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pro Tips
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pro Tips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-more-engagement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting More Engagement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-your-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Your Network
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Best Practices
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Next Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Help
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../creating-content/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating Content
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wallet-connection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Wallet Connection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../monetizing-content/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Monetizing Content
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Developer Resources
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Developer Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/api-documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API Documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Community
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Community
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../social/links/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Social Links
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Start
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Start">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-youll-need" class="md-nav__link">
+    <span class="md-ellipsis">
+      What You'll Need
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-minute-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      5-Minute Setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connecting-your-wallet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connecting Your Wallet
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connecting Your Wallet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-wallet-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step-by-Step Wallet Connection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-Step Wallet Connection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-choose-your-wallet" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Choose Your Wallet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-grant-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Grant Permissions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-sign-authentication-challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Sign Authentication Challenge
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-complete-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Complete Connection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-connection-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting Connection Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting Connection Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wallet-not-detected" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wallet Not Detected
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connection-failed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection Failed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentication-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentication Errors
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-your-profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Up Your Profile
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setting Up Your Profile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#profile-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Profile Information
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Profile Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profile-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Profile Images
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#social-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      Social Links
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identity-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identity Verification
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identity Verification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ada-handle-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADA Handle Integration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verification-badge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification Badge
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-your-first-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Your First Post
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Your First Post">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-the-post-composer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using the Post Composer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the Post Composer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-access-the-composer" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Access the Composer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-write-your-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Write Your Content
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-add-media-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Add Media (Optional)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-use-special-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Use Special Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-post-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Post Options
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#writing-engaging-posts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Writing Engaging Posts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-content-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Content Tips
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discovering-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discovering Content
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Discovering Content">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exploring-the-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exploring the Platform
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exploring the Platform">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#home-feed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Home Feed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search &amp; Discovery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation Tips
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pro-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pro Tips
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pro Tips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-more-engagement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting More Engagement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-your-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Your Network
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Best Practices
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Next Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Help
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
+<p>Welcome to Proof of Post! This guide will walk you through everything you need to know to start using the platform, from connecting your wallet to creating your first post.</p>
+<h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
+<h3 id="what-youll-need">What You'll Need<a class="headerlink" href="#what-youll-need" title="Permanent link">&para;</a></h3>
+<p>Before getting started, make sure you have:
+- <strong>A Cardano Wallet</strong> (Eternl, Lace, or Vespr)
+- <strong>Some ADA</strong> for transactions and tips (minimum 5 ADA recommended)
+- <strong>An ADA Handle</strong> (optional, but recommended for verified identity)</p>
+<h3 id="5-minute-setup">5-Minute Setup<a class="headerlink" href="#5-minute-setup" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Visit the Platform</strong> - Go to <a href="https://proofofpost.io">proofofpost.io</a></li>
+<li><strong>Connect Your Wallet</strong> - Click "Connect Wallet" and choose your preferred wallet</li>
+<li><strong>Sign Authentication</strong> - Sign the message to verify wallet ownership</li>
+<li><strong>Complete Profile</strong> - Add username, bio, and profile picture</li>
+<li><strong>Start Posting</strong> - Create your first post and join the community!</li>
+</ol>
+<h2 id="connecting-your-wallet">Connecting Your Wallet<a class="headerlink" href="#connecting-your-wallet" title="Permanent link">&para;</a></h2>
+<h3 id="step-by-step-wallet-connection">Step-by-Step Wallet Connection<a class="headerlink" href="#step-by-step-wallet-connection" title="Permanent link">&para;</a></h3>
+<h4 id="1-choose-your-wallet">1. Choose Your Wallet<a class="headerlink" href="#1-choose-your-wallet" title="Permanent link">&para;</a></h4>
+<p>Click the "Connect Wallet" button and select from available options:
+- <strong>Eternl</strong> - Feature-rich with advanced capabilities
+- <strong>Lace</strong> - IOG's official light wallet
+- <strong>Vespr</strong> - Community-focused wallet</p>
+<h4 id="2-grant-permissions">2. Grant Permissions<a class="headerlink" href="#2-grant-permissions" title="Permanent link">&para;</a></h4>
+<p>Your wallet will ask for permission to:
+- <strong>Connect to the site</strong> - Allow the platform to communicate with your wallet
+- <strong>Read wallet addresses</strong> - Get your wallet address for authentication
+- <strong>Sign messages</strong> - Enable authentication and post signing</p>
+<h4 id="3-sign-authentication-challenge">3. Sign Authentication Challenge<a class="headerlink" href="#3-sign-authentication-challenge" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The platform generates a unique challenge message</li>
+<li>Your wallet will ask you to sign this message</li>
+<li>This proves you own the wallet without revealing private keys</li>
+<li>No ADA is spent during authentication</li>
+</ul>
+<h4 id="4-complete-connection">4. Complete Connection<a class="headerlink" href="#4-complete-connection" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Once signed, you'll be automatically logged in</li>
+<li>Your wallet address becomes your unique identifier</li>
+<li>ADA handles (if you have one) are automatically detected</li>
+</ul>
+<h3 id="troubleshooting-connection-issues">Troubleshooting Connection Issues<a class="headerlink" href="#troubleshooting-connection-issues" title="Permanent link">&para;</a></h3>
+<h4 id="wallet-not-detected">Wallet Not Detected<a class="headerlink" href="#wallet-not-detected" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Ensure your wallet extension is installed and enabled</li>
+<li>Refresh the page and try again</li>
+<li>Check that your wallet is unlocked</li>
+<li>Try a different browser if issues persist</li>
+</ul>
+<h4 id="connection-failed">Connection Failed<a class="headerlink" href="#connection-failed" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Make sure you have a stable internet connection</li>
+<li>Verify your wallet has the latest version</li>
+<li>Clear browser cache and cookies</li>
+<li>Disable other wallet extensions temporarily</li>
+</ul>
+<h4 id="authentication-errors">Authentication Errors<a class="headerlink" href="#authentication-errors" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Ensure you're signing the correct message</li>
+<li>Don't modify the challenge message</li>
+<li>Try disconnecting and reconnecting your wallet</li>
+<li>Contact support if problems continue</li>
+</ul>
+<h2 id="setting-up-your-profile">Setting Up Your Profile<a class="headerlink" href="#setting-up-your-profile" title="Permanent link">&para;</a></h2>
+<h3 id="profile-information">Profile Information<a class="headerlink" href="#profile-information" title="Permanent link">&para;</a></h3>
+<p>After connecting your wallet, complete your profile:</p>
+<h4 id="basic-information">Basic Information<a class="headerlink" href="#basic-information" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Username</strong> - Choose a unique handle (e.g., @cryptoexplorer)</li>
+<li><strong>Display Name</strong> - Your full name or preferred display name</li>
+<li><strong>Bio</strong> - Brief description of yourself (280 characters)</li>
+</ul>
+<h4 id="profile-images">Profile Images<a class="headerlink" href="#profile-images" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Avatar</strong> - Profile picture (recommended: 400x400px)</li>
+<li><strong>Banner</strong> - Cover image (recommended: 1500x500px)</li>
+<li><strong>Supported formats</strong> - JPEG, PNG, WebP</li>
+<li><strong>Maximum size</strong> - 10MB per image</li>
+</ul>
+<h4 id="social-links">Social Links<a class="headerlink" href="#social-links" title="Permanent link">&para;</a></h4>
+<p>Add links to your other social media profiles:
+- <strong>Website</strong> - Your personal or business website
+- <strong>Twitter</strong> - Your Twitter/X handle
+- <strong>Discord</strong> - Discord server or username
+- <strong>Telegram</strong> - Telegram channel or username
+- <strong>GitHub</strong> - For developers and technical users</p>
+<h3 id="identity-verification">Identity Verification<a class="headerlink" href="#identity-verification" title="Permanent link">&para;</a></h3>
+<h4 id="ada-handle-integration">ADA Handle Integration<a class="headerlink" href="#ada-handle-integration" title="Permanent link">&para;</a></h4>
+<p>If you own an ADA handle:
+- It will be automatically detected when you connect
+- Displays as <code>$yourhandle</code> on your profile
+- Provides verification badge indicating on-chain identity
+- Can be used in profile URLs (e.g., <code>/profile/$yourhandle</code>)</p>
+<h4 id="verification-badge">Verification Badge<a class="headerlink" href="#verification-badge" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Blue checkmark indicates verified ADA handle</li>
+<li>Helps prevent impersonation</li>
+<li>Builds trust with other users</li>
+<li>Required for some advanced features</li>
+</ul>
+<h2 id="creating-your-first-post">Creating Your First Post<a class="headerlink" href="#creating-your-first-post" title="Permanent link">&para;</a></h2>
+<h3 id="using-the-post-composer">Using the Post Composer<a class="headerlink" href="#using-the-post-composer" title="Permanent link">&para;</a></h3>
+<h4 id="1-access-the-composer">1. Access the Composer<a class="headerlink" href="#1-access-the-composer" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Click the "What's happening?" text box</li>
+<li>Or use the floating compose button on mobile</li>
+<li>Composer expands to show full features</li>
+</ul>
+<h4 id="2-write-your-content">2. Write Your Content<a class="headerlink" href="#2-write-your-content" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Text limit</strong> - 280 characters (like Twitter)</li>
+<li><strong>Real-time counter</strong> - Shows remaining characters</li>
+<li><strong>Auto-suggestions</strong> - Platform suggests tokens, users, hashtags</li>
+<li><strong>Rich formatting</strong> - URLs, mentions, and hashtags are automatically formatted</li>
+</ul>
+<h4 id="3-add-media-optional">3. Add Media (Optional)<a class="headerlink" href="#3-add-media-optional" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Click the image icon</strong> to add photos</li>
+<li><strong>Support for multiple images</strong> (up to 4 per post)</li>
+<li><strong>GIF picker</strong> for animated content via Giphy</li>
+<li><strong>Video support</strong> for short clips</li>
+</ul>
+<h4 id="4-use-special-features">4. Use Special Features<a class="headerlink" href="#4-use-special-features" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Hashtags</strong> - Use <code>#topic</code> to categorize your post</li>
+<li><strong>Token mentions</strong> - Reference <code>$TOKEN</code> to link to token pages</li>
+<li><strong>User mentions</strong> - Tag <code>@username</code> or <code>$handle</code> to notify users</li>
+<li><strong>Paid media</strong> - Toggle to monetize images/videos</li>
+</ul>
+<h4 id="5-post-options">5. Post Options<a class="headerlink" href="#5-post-options" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Post signature</strong> - Cryptographically sign your post for verification</li>
+<li><strong>Audience settings</strong> - Control who can see your post</li>
+<li><strong>Scheduling</strong> - Schedule posts for later (coming soon)</li>
+</ul>
+<h3 id="content-best-practices">Content Best Practices<a class="headerlink" href="#content-best-practices" title="Permanent link">&para;</a></h3>
+<h4 id="writing-engaging-posts">Writing Engaging Posts<a class="headerlink" href="#writing-engaging-posts" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Be authentic</strong> - Share genuine thoughts and experiences</li>
+<li><strong>Use hashtags wisely</strong> - Include relevant hashtags for discoverability</li>
+<li><strong>Engage with others</strong> - Reply to comments and participate in discussions</li>
+<li><strong>Share valuable content</strong> - Provide insights, news, or entertainment</li>
+<li><strong>Be respectful</strong> - Follow community guidelines and treat others kindly</li>
+</ul>
+<h4 id="visual-content-tips">Visual Content Tips<a class="headerlink" href="#visual-content-tips" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>High-quality images</strong> - Use clear, well-lit photos</li>
+<li><strong>Relevant visuals</strong> - Ensure images relate to your text content</li>
+<li><strong>Optimize for mobile</strong> - Most users browse on mobile devices</li>
+<li><strong>Use alt text</strong> - Describe images for accessibility</li>
+<li><strong>Consider monetization</strong> - High-quality content can be monetized</li>
+</ul>
+<h2 id="discovering-content">Discovering Content<a class="headerlink" href="#discovering-content" title="Permanent link">&para;</a></h2>
+<h3 id="exploring-the-platform">Exploring the Platform<a class="headerlink" href="#exploring-the-platform" title="Permanent link">&para;</a></h3>
+<h4 id="home-feed">Home Feed<a class="headerlink" href="#home-feed" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Personalized timeline</strong> - Posts from users you follow</li>
+<li><strong>Chronological order</strong> - Latest posts appear first</li>
+<li><strong>Infinite scroll</strong> - Automatically loads more content</li>
+<li><strong>Real-time updates</strong> - New posts appear automatically</li>
+</ul>
+<h4 id="search-discovery">Search &amp; Discovery<a class="headerlink" href="#search-discovery" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Search bar</strong> - Find posts, users, tokens, and topics</li>
+<li><strong>Trending topics</strong> - Discover popular hashtags</li>
+<li><strong>Token pages</strong> - Dedicated pages for each Cardano token</li>
+<li><strong>User profiles</strong> - Explore other users' content and followers</li>
+</ul>
+<h4 id="navigation-tips">Navigation Tips<a class="headerlink" href="#navigation-tips" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Smooth scrolling</strong> - Optimized for 60fps performance</li>
+<li><strong>Modal overlays</strong> - Click posts for detailed view without losing scroll position</li>
+<li><strong>Keyboard shortcuts</strong> - Use keyboard for faster navigation</li>
+<li><strong>Mobile optimization</strong> - Full feature parity on mobile devices</li>
+</ul>
+<h2 id="pro-tips">Pro Tips<a class="headerlink" href="#pro-tips" title="Permanent link">&para;</a></h2>
+<h3 id="getting-more-engagement">Getting More Engagement<a class="headerlink" href="#getting-more-engagement" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Post regularly</strong> - Consistent posting builds audience</li>
+<li><strong>Engage authentically</strong> - Like, comment, and share others' content</li>
+<li><strong>Use relevant hashtags</strong> - Help people discover your content</li>
+<li><strong>Time your posts</strong> - Post when your audience is most active</li>
+<li><strong>Join conversations</strong> - Participate in trending topics</li>
+</ul>
+<h3 id="building-your-network">Building Your Network<a class="headerlink" href="#building-your-network" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Follow interesting users</strong> - Curate your feed with quality content</li>
+<li><strong>Engage with comments</strong> - Build relationships through conversations</li>
+<li><strong>Share valuable insights</strong> - Become known for expertise in your area</li>
+<li><strong>Support creators</strong> - Use the tipping system to support good content</li>
+<li><strong>Join communities</strong> - Participate in token-specific discussions</li>
+</ul>
+<h3 id="security-best-practices">Security Best Practices<a class="headerlink" href="#security-best-practices" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Never share private keys</strong> - The platform never needs your seed phrase</li>
+<li><strong>Verify URLs</strong> - Always check you're on the official domain</li>
+<li><strong>Use strong passwords</strong> - For your wallet (not the platform)</li>
+<li><strong>Keep software updated</strong> - Update your wallet and browser regularly</li>
+<li><strong>Be cautious with links</strong> - Verify external links before clicking</li>
+</ul>
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
+<p>Now that you're set up, explore these features:</p>
+<ol>
+<li><strong><a href="../creating-content/">Creating Content</a></strong> - Learn advanced content creation techniques</li>
+<li><strong><a href="../wallet-connection/">Wallet Connection</a></strong> - Deep dive into wallet features</li>
+<li><strong><a href="../monetizing-content/">Monetizing Content</a></strong> - Start earning from your content</li>
+</ol>
+<h3 id="getting-help">Getting Help<a class="headerlink" href="#getting-help" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Community Support</strong> - Ask questions in the community</li>
+<li><strong>Documentation</strong> - Comprehensive guides and tutorials</li>
+<li><strong>Social Media</strong> - Follow official accounts for updates</li>
+<li><strong>Direct Support</strong> - Contact team for technical issues</li>
+</ul>
+<p>Welcome to the decentralized social media revolution! 🚀</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Proof of Post. All rights reserved.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "content.code.copy", "search.suggest", "search.highlight", "navigation.expand"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
